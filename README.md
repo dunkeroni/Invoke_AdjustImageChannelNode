@@ -1,4 +1,4 @@
-# Invoke_AdjustImageChannelNode  
+# Adjust Image Channel node  
 An expanded implementation of the Adjust Saturations/Luminosity nodes from Invoke 3.1.0 able to handle arbitrary format/channel as well as negative multipliers.  
 Supports RGB, RGBA, CYMK, YCbCr, LAB, HSV  
 
@@ -10,4 +10,6 @@ Offsetting by -255 will make make the entire channel 0.
 
 ## Multiply Method:  
 Multiplies by the adjustment value, limits the result into the range [-255,255], then modulo by 256.  
+Values between 0 and 1 will decrease the value (brightness, saturation, etc). Values above 1 will increase.  
 Multiplying by a value of -1.0 will invert the channel.  
+Values between -1 and 0 have interesting results on color outputs.  
