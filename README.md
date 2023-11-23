@@ -1,3 +1,6 @@
+# This Repository Has Already Been Merged.  
+The features explored here have been improved and merged into InvokeAI main. This repository will not be updated and the structure is no longer compatible with Invoke 3.4.0 and up.  
+
 # Adjust Image Channel node  
 An expanded implementation of the Adjust Saturations/Luminosity nodes from Invoke 3.1.0 able to handle arbitrary format/channel as well as negative multipliers.  
 Supports RGB, RGBA, CYMK, YCbCr, LAB, HSV  
